@@ -60,17 +60,31 @@ img {
 /*----------Column Format------------*/
 
 /*---------------Backgrounds----------*/
+#header {
+	background-image: url(../../../../../../Git%20Hub/2567-twin-finch/img/hero-image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
 /*---------------Backgrounds----------*/
 
 /*--------Buttons-----------*/
+
+
+
 /*--------Buttons-----------*/
 
 /*--------Images-----------*/
 
 .col-1-2 img {
 	height: 300px;
+	padding-left: 165px;
 }
 
+#map {
+	padding-left: 200px;
+}
 /*--------Images-----------*/
 
 /*------------------------------------NAVIGATION----------------*/
@@ -91,6 +105,46 @@ nav {
 /*------------------------------------STRUCTURE----------------*/
 
 /*--------Form-----------*/
+
+form {
+	align: center;
+}
+
+form label {
+	font-size: .75rem;
+}
+
+input[type="text"], input[type~="email"]  {
+	width: 75%;
+	height: 3rem;
+	display: block;
+}
+
+input[type="submit"] {
+	float: right;
+}
+
+textarea {
+	width: 75%;
+	height: 6rem;
+	display: block;
+}
+
+#contact .col-1-2:last-child {
+	align: center;
+}
+
+#conference p, #contact p, #about p  {
+	text-align: center;	
+}
+
+#contact .col-1-2 p {
+	text-align: left;
+	font-size: .75rem;
+	margin-top: 2rem;
+	margin-bottom: .25rem;
+}
+
 /*--------Form-----------*/
 
 /*--------Body and Headers-----------*/
@@ -205,6 +259,7 @@ h1, h2, h3, p {
 .col-8-10 {
 	width: 80%;
 	margin: 0 auto;
+	float: none;
 }
 
 .col-5-11 {
