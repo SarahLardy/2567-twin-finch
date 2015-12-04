@@ -64,6 +64,28 @@ img {
 	background-image: url(../../../../../../Git%20Hub/2567-twin-finch/img/hero-image.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-bottom: 75px;
+}
+
+#customer {
+	background-image: url(../../../../../../Git%20Hub/2567-twin-finch/img/body-image-copy.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#about {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#location {
+	padding-top: 50px;
+}
+
+#contact {
+	padding-top: 50px;
 }
 
 
@@ -71,7 +93,9 @@ img {
 
 /*--------Buttons-----------*/
 
-
+.btn-one {
+	padding-left: 260px;
+}
 
 /*--------Buttons-----------*/
 
@@ -85,6 +109,8 @@ img {
 #map {
 	padding-left: 200px;
 }
+
+
 /*--------Images-----------*/
 
 /*------------------------------------NAVIGATION----------------*/
