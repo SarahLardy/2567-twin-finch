@@ -39,7 +39,6 @@
 	clear: both;
 }
 
-
 img {
 	max-width: 100%;
 }
@@ -80,6 +79,11 @@ img {
 	padding-bottom: 50px;
 }
 
+#products, #about, #contact, #location, #footer {
+	background-color: #292929;
+}
+
+
 #location {
 	padding-top: 50px;
 }
@@ -88,8 +92,8 @@ img {
 	padding-top: 50px;
 }
 
-footer {
-	background-color: #828080;
+#products {
+	padding-top: 50px;
 }
 
 /*---------------Backgrounds----------*/
@@ -97,8 +101,24 @@ footer {
 /*--------Buttons-----------*/
 
 .btn-one {
-	padding-left: 260px;
+	padding-top: 10px;
+	padding-left: 220px;
 }
+
+.btn-one a {
+	border-radius: 25px;
+	background-color: #292929;
+	border-width: thin;
+	border-style: solid;
+	border-color: #ffffff;
+	padding: 10px 50px;
+}
+
+.btn-one a:hover {
+	background-color: #686463;
+}
+
+
 
 /*--------Buttons-----------*/
 
@@ -136,12 +156,21 @@ footer {
 
 ul li {
 	display: inline-block;
-	margin-right: 2rem;
+	margin-right: 3rem;
 }
 
 nav {
 	float: right;
 	padding-top: 40px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#header a:hover {
+	color: #828080;
 }
 
 /*--------Main-----------*/
@@ -152,12 +181,14 @@ nav {
 
 form {
 	align: center;
+	
 }
 
 input[type="text"], input[type~="email"] {
 	width: 100%;
 	height: 3rem;
 	display: block;
+	margin-bottom: 25px;
 	
 }
 
@@ -191,6 +222,55 @@ h1, h2, h3, p {
 /*------------------------------------Typography----------------*/
 
 /*--------Typography-----------*/
+
+body {
+	font-family: 'Crimson Text', serif;
+	color: white;
+}
+
+h1 {
+	line-height: 3rem;
+	font-weight: 100;
+}
+
+h2 {
+	font-size: 2.5rem;
+	font-weight: lighter;
+}
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: lighter;
+}
+
+p {
+	font-size: .75rem;
+	font-weight: lighter;
+}
+
+#about p {
+	font-size: 1rem;
+	line-height: 2rem;
+}
+
+#customer p, #location p {
+	font-size: 1rem;
+	line-height: 2rem;
+}
+
+input {
+	background-color: #292929;
+	border-style: solid;
+	border-color: #686463; 
+}
+
+.price {
+	font-size: 1.25rem;
+	color: #686463;
+}
+
+
+
 /*--------Typography-----------*/
 
 /*----------------------------------------------UTILITY---------------*/
