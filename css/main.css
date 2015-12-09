@@ -76,7 +76,6 @@ img {
 
 #about {
 	padding-top: 50px;
-	padding-bottom: 50px;
 }
 
 #products, #about, #contact, #location, #footer {
@@ -118,7 +117,18 @@ img {
 	background-color: #686463;
 }
 
+input[type="submit"] {
+	border-radius: 5px;
+	background-color: #292929;
+	border-width: thin;
+	border-style: solid;
+	border-color: #ffffff;
+	padding: 10px 50px;
+}
 
+input[type="submit"] a {
+	background-color: #686463;
+}
 
 /*--------Buttons-----------*/
 
@@ -148,6 +158,7 @@ img {
 	padding-top: 50px;
 }
 
+
 /*--------Images-----------*/
 
 /*------------------------------------NAVIGATION----------------*/
@@ -169,7 +180,7 @@ a {
 	color: white;
 }
 
-#header a:hover {
+a:hover {
 	color: #828080;
 }
 
@@ -249,19 +260,20 @@ p {
 }
 
 #about p {
-	font-size: 1rem;
+	font-size: 1.25rem;
 	line-height: 2rem;
 }
 
 #customer p, #location p {
-	font-size: 1rem;
+	font-size: 1.25rem;
 	line-height: 2rem;
 }
 
 input {
 	background-color: #292929;
 	border-style: solid;
-	border-color: #686463; 
+	border-color: #686463;
+	padding-left: 20px; 
 }
 
 .price {
@@ -269,7 +281,31 @@ input {
 	color: #686463;
 }
 
+section:nth-child(3) .col-8-10:last-child p {
+	padding-top: 15px;
+	font-size: 1.25rem;
+	color: #8b8c8b;
+}
 
+#review {
+	font-size: 1rem;
+}
+
+#footer p {
+	font-size: 1rem;
+}
+
+#products .row:nth-child(3) .col-1-2:first-child p {
+	font-style: italic;
+}
+
+#products .row:nth-child(3) .col-1-2:nth-child(2) .btn-one:last-child  {
+	padding-top: 30px;
+}
+
+#products .row:nth-child(4) .col-1-2:nth-child(2) .btn-one:last-child  {
+	padding-top: 35px;
+}
 
 /*--------Typography-----------*/
 
@@ -544,7 +580,7 @@ input {
 	
 
 	.btn-one {
-		padding-left: 150px;
+		padding-left: 110px;
 	}
 	
 	#icon {
@@ -583,8 +619,7 @@ input {
 	.col-3-4 {
 	width: 100%;
 	display: inline;
-	
-}
+	}
 	
 	#contact {
 		width: 100%;
@@ -597,7 +632,7 @@ input {
 	}
 	
 	.icon ul li {
-	padding-right: 50px;
+	padding-right: 20px;
 	}
 
 }
