@@ -7,6 +7,7 @@
 --------------------------------------1.2 Backgrounds
 --------------------------------------1.3 Buttons
 --------------------------------------1.4 Images
+--------------------------------------1.5 Padding
 --------------------------------2 Navigation 
 --------------------------------------2.1 Main
 --------------------------------3 Structure
@@ -59,20 +60,24 @@ img {
 /*----------Column Format------------*/
 
 /*---------------Backgrounds----------*/
+
 #header {
-	background-image: url(../../../../../../Git%20Hub/2567-twin-finch/img/hero-image.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-bottom: 75px;
+  background:url(../../../../../../Git%20Hub/2567-twin-finch/img/hero-image.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 75px;
 }
 
 #customer {
-	background-image: url(../../../../../../Git%20Hub/2567-twin-finch/img/body-image-copy.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-top: 50px;
-	padding-bottom: 50px;
+  background: url(../../../../../../Git%20Hub/2567-twin-finch/img/body-image-copy.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
 
 #about {
 	padding-top: 50px;
@@ -93,6 +98,11 @@ img {
 
 #products {
 	padding-top: 50px;
+}
+
+#customer h2 {
+	margin-top: 0;
+	padding-top: 30px;
 }
 
 /*---------------Backgrounds----------*/
@@ -161,6 +171,10 @@ input[type="submit"] a {
 
 /*--------Images-----------*/
 
+/*--------Padding-----------*/
+
+/*--------Padding-----------*/
+
 /*------------------------------------NAVIGATION----------------*/
 
 /*--------Main-----------*/
@@ -197,7 +211,7 @@ form {
 
 input[type="text"], input[type~="email"] {
 	width: 100%;
-	height: 3rem;
+	height: 50px;
 	display: block;
 	margin-bottom: 25px;
 	
@@ -431,7 +445,6 @@ section:nth-child(3) .col-8-10:last-child p {
 
 .col-1-1 div {
 	height: 300px;
-	background-color: pink;
 }
 
 .col-1-2 div {
@@ -460,72 +473,58 @@ section:nth-child(3) .col-8-10:last-child p {
 
 .col-1-5 div {
 	height: 300px;
-	background-color: yellow;
 }
 
 .col-4-5 div {
 	height: 300px;
-	background: orange; 
 }
 
 .col-1-6 div {
 	height: 300px;
-	background: red;
 }
 
 .col-5-6 div {
 	height: 300px;
-	background: blue;
 }
 
 .col-1-7 div {
 	height: 300px;
-	background: pink;
 }
 
 .col-5-7 div{
 	height: 300px;
-	background: purple;
 }
 
 .col-2-7 div {
 	height: 300px;
-	background: yellow;
 }
 
 .col-1-8 div {
 	height: 300px;
-	background: blue;
 }
 
 .col-4-8 div {
 	height: 300px;
-	background: green;
 }
 
 .col-1-9 div {
 	height: 300px;
-	background: #C035F1;
 }
 
 .col-3-9 div {
 	height: 300px;
-	background: yellow;
 }
 
 .col-6-9 div {
 	height: 300px;
-	background: red;
 }
 
 .col-1-10 div {
 	height: 300px;
-	background: orange;
 }
 
 .col-2-10 div  {
 	height: 300px;
-	background: green;
 }
 
 .col-8-10 div {
@@ -534,37 +533,53 @@ section:nth-child(3) .col-8-10:last-child p {
 
 .col-1-11 div {
 	height: 300px;
-	background: red;
 }
 
 .col-5-11 div {
 	height: 300px;
-	background: green;
 }
 
 .col-6-11  div {
 	height: 300px;
-	background: yellow;
 }
 
 .col-1-12 div {
 	height: 300px;
-	background: blue;
 }
 
 .col-7-12 div{
 	height: 300px;
-	background: pink;
 }
 
 .col-5-12  div {
 	height: 300px;
-	background: red;
 }
+
+
+/* Media Query Table of Contents
+--------------------------------1 Format
+--------------------------------------1.1 Column Format
+--------------------------------------1.2 Backgrounds
+--------------------------------------1.3 Buttons
+--------------------------------------1.4 Images
+--------------------------------------1.5 Padding
+--------------------------------2 Navigation 
+--------------------------------------2.1 Main
+--------------------------------3 Structure
+--------------------------------------3.1 Site Form
+--------------------------------------3.2 Site Header
+--------------------------------4 Typography
+--------------------------------------4.1 Typography
+--------------------------------5 Utility
+--------------------------------------5.1 Columns Floats, Positions, Displays
+--------------------------------------------*/
 
 	
 @media screen and (max-width: 480px) {
 	
+	/*-----------------------------------FORMAT----------------------------*/
+	
+	/*----------------------COLUMN FORMAT------------------*/
 	.wrapper {
 		width: 95%;
 	}
@@ -578,47 +593,49 @@ section:nth-child(3) .col-8-10:last-child p {
 		padding: 0 0 20px 0;
 	}
 	
-
+	.col-1-2 img {
+		height: 300px;
+		padding-left: 50px;
+	}
+	
+	.col-3-4 {
+		width: 100%;
+		display: inline;
+	}
+	
+	#products .col-1-2 {
+		padding-top: 0;
+	}
+	
+	/*----------------------COLUMN FORMAT------------------*/
+	
+	/*----------------------BACKGROUNDS------------------*/
+	/*----------------------BACKGROUNDS------------------*/
+	
+	/*----------------------BUTTONS------------------*/
 	.btn-one {
 		padding-left: 110px;
 	}
+	/*----------------------BUTTONS------------------*/
 	
-	#icon {
-		padding-left: 0;
-	}
-	
-
+	/*----------------------IMAGE------------------*/
 	#contact img {
 		height: 35px;
 		padding-left: 50px;
 	}
 	
-	h1 {
-		padding: 0;
-		font-size: 1.5rem;
-	}
-	
-	.col-1-2 img {
-	height: 300px;
-	padding-left: 50px;
-	}
-
-	#map {
-	padding-left: 0;
-	}
-	
 	figure img {
 		padding-left: 85px;
 	}
+	/*----------------------IMAGES------------------*/
 	
-	nav {
-		font-size: .3rem;
-		text-align: left;
+	/*----------------------PADDING------------------*/
+	#icon {
+		padding-left: 0;
 	}
 	
-	.col-3-4 {
-	width: 100%;
-	display: inline;
+	#map {
+		padding-left: 0;
 	}
 	
 	#contact {
@@ -627,14 +644,30 @@ section:nth-child(3) .col-8-10:last-child p {
 		padding: 0;
 	}
 	
-	#products .col-1-2 {
-	padding-top: 0;
+	.icon ul li {
+		padding-right: 20px;
 	}
 	
-	.icon ul li {
-	padding-right: 20px;
+	#contact h2 {
+		margin: 0;
+		padding-top: 50px;
 	}
-
+	/*----------------------PADDING------------------*/
+	
+	/*-----------------------------------TYPOGRAPHY----------------------------*/
+	/*----------------------TYPOGRAPHY------------------*/
+	
+	h1 {
+		padding: 0;
+		font-size: 1.5rem;
+	}
+	
+	nav {
+		font-size: .3rem;
+		text-align: left;
+	}
+	/*----------------------TYPOGRAPHY------------------*/
+	
 }
 
 
