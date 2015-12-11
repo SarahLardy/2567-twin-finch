@@ -63,15 +63,14 @@ img {
 
 #header {
   background:url(../../../../../../Git%20Hub/2567-twin-finch/img/hero-image.jpg) no-repeat center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   padding-bottom: 75px;
 }
 
 #customer {
   background: url(../../../../../../Git%20Hub/2567-twin-finch/img/body-image-copy.jpg) no-repeat center fixed; 
+}
+
+#header, #customer {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -79,25 +78,12 @@ img {
 }
 
 
-#about {
+#about, #location, #contact, #products, #products .col-1-2 {
 	padding-top: 50px;
 }
 
-#products, #about, #contact, #location, #footer {
+#products, #about, #contact, #location, #footer, .btn-one a, input[type="submit"] {
 	background-color: #292929;
-}
-
-
-#location {
-	padding-top: 50px;
-}
-
-#contact {
-	padding-top: 50px;
-}
-
-#products {
-	padding-top: 50px;
 }
 
 #customer h2 {
@@ -116,28 +102,19 @@ img {
 
 .btn-one a {
 	border-radius: 25px;
-	background-color: #292929;
-	border-width: thin;
-	border-style: solid;
-	border-color: #ffffff;
-	padding: 10px 50px;
 }
 
-.btn-one a:hover {
+.btn-one a:hover, input[type="submit"] a  {
 	background-color: #686463;
 }
 
 input[type="submit"] {
 	border-radius: 5px;
-	background-color: #292929;
-	border-width: thin;
-	border-style: solid;
-	border-color: #ffffff;
-	padding: 10px 50px;
 }
 
-input[type="submit"] a {
-	background-color: #686463;
+input[type="submit"], .btn-one a {
+	border: thin solid #ffffff;
+	padding: 10px 50px;
 }
 
 /*--------Buttons-----------*/
@@ -151,27 +128,24 @@ input[type="submit"] a {
 
 #map {
 	padding-left: 200px;
-	padding-top: 20px;
 	padding-bottom: 30px;
 }
 
 .logo {
 	float: left;
-	padding-top: 20px;
 }
 
-.icon ul li {
+.icon ul li, nav, input[type="submit"], .icon {
 	float: right;
 }
-
-#products .col-1-2 {
-	padding-top: 50px;
-}
-
 
 /*--------Images-----------*/
 
 /*--------Padding-----------*/
+
+#map, .logo {
+	padding-top: 20px;
+}
 
 /*--------Padding-----------*/
 
@@ -184,14 +158,12 @@ ul li {
 	margin-right: 3rem;
 }
 
-nav {
-	float: right;
+nav, .icon {
 	padding-top: 40px;
 }
 
 a {
 	text-decoration: none;
-	color: white;
 }
 
 a:hover {
@@ -204,11 +176,6 @@ a:hover {
 
 /*--------Form-----------*/
 
-form {
-	align: center;
-	
-}
-
 input[type="text"], input[type~="email"] {
 	width: 100%;
 	height: 50px;
@@ -217,19 +184,13 @@ input[type="text"], input[type~="email"] {
 	
 }
 
-input[type="submit"] {
-	float: right;
-}
-
 #contact .col-1-2 {
 	text-align: left;
-	font-size: .75rem;
 	margin-top: 2rem;
 	margin-bottom: .25rem;
 }
 
 #article {
-	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 50px;
 }
@@ -238,7 +199,7 @@ input[type="submit"] {
 
 /*--------Body and Headers-----------*/
 
-h1, h2, h3, p {
+h1, h2, h3, p, #article {
 	text-align: center;
 }
 
@@ -248,9 +209,16 @@ h1, h2, h3, p {
 
 /*--------Typography-----------*/
 
+body, a {
+	color: white;
+}
+
 body {
 	font-family: 'Crimson Text', serif;
-	color: white;
+}
+
+h2, h3, p {
+	font-weight: lighter;
 }
 
 h1 {
@@ -258,54 +226,42 @@ h1 {
 	font-weight: 100;
 }
 
+#about p, #customer p, #location p, .price, section:nth-child(3) .col-8-10:last-child p {
+	font-size: 1.25rem;
+}
+
 h2 {
 	font-size: 2.5rem;
-	font-weight: lighter;
 }
 
 h3 {
 	font-size: 1.5rem;
-	font-weight: lighter;
 }
 
-p {
+p, #contact .col-1-2 {
 	font-size: .75rem;
-	font-weight: lighter;
 }
 
-#about p {
-	font-size: 1.25rem;
-	line-height: 2rem;
-}
-
-#customer p, #location p {
-	font-size: 1.25rem;
+#about p, #customer p, #location p {
 	line-height: 2rem;
 }
 
 input {
 	background-color: #292929;
-	border-style: solid;
-	border-color: #686463;
+	border: 2px solid #686463;
 	padding-left: 20px; 
 }
 
 .price {
-	font-size: 1.25rem;
 	color: #686463;
 }
 
 section:nth-child(3) .col-8-10:last-child p {
 	padding-top: 15px;
-	font-size: 1.25rem;
 	color: #8b8c8b;
 }
 
-#review {
-	font-size: 1rem;
-}
-
-#footer p {
+#review, #footer p  {
 	font-size: 1rem;
 }
 
@@ -320,6 +276,11 @@ section:nth-child(3) .col-8-10:last-child p {
 #products .row:nth-child(4) .col-1-2:nth-child(2) .btn-one:last-child  {
 	padding-top: 35px;
 }
+
+#article {
+	text-decoration: underline;
+}
+
 
 /*--------Typography-----------*/
 
@@ -340,7 +301,6 @@ section:nth-child(3) .col-8-10:last-child p {
 }
 
 .col-1-4 {
-	width:;
 	float: right;
 }
 
@@ -447,29 +407,11 @@ section:nth-child(3) .col-8-10:last-child p {
 	height: 300px;
 }
 
-.col-1-2 div {
-	height:;
-
-}
-
-.col-1-3 div {
-	height:;
-}
-
 .col-2-3 div {
 	height: 300px;
 	
 }
 
-.col-1-4 div {
-	height:;
-	
-}
-
-.col-3-4 div {
-	height:;
-	
-}
 
 .col-1-5 div {
 	height: 300px;
@@ -527,10 +469,6 @@ section:nth-child(3) .col-8-10:last-child p {
 	height: 300px;
 }
 
-.col-8-10 div {
-	height:;
-}
-
 .col-1-11 div {
 	height: 300px;
 }
@@ -584,26 +522,23 @@ section:nth-child(3) .col-8-10:last-child p {
 		width: 95%;
 	}
 
-	.col-8-10 {
+	.col-8-10, .col-1-3, .col-1-2, .col-3-4, #contact {
 		width: 100%;
 	}
 
 	.col-1-3, .col-1-2{
-		width: 100%;
 		padding: 0 0 20px 0;
 	}
 	
 	.col-1-2 img {
 		height: 300px;
-		padding-left: 50px;
 	}
 	
 	.col-3-4 {
-		width: 100%;
 		display: inline;
 	}
 	
-	#products .col-1-2 {
+	#products .col-1-2, nav {
 		padding-top: 0;
 	}
 	
@@ -619,9 +554,9 @@ section:nth-child(3) .col-8-10:last-child p {
 	/*----------------------BUTTONS------------------*/
 	
 	/*----------------------IMAGE------------------*/
+	
 	#contact img {
 		height: 35px;
-		padding-left: 50px;
 	}
 	
 	figure img {
@@ -630,27 +565,26 @@ section:nth-child(3) .col-8-10:last-child p {
 	/*----------------------IMAGES------------------*/
 	
 	/*----------------------PADDING------------------*/
-	#icon {
-		padding-left: 0;
-	}
 	
-	#map {
-		padding-left: 0;
-	}
-	
-	#contact {
-		width: 100%;
+	.col-1-2 img, #contact img {
 		padding-left: 50px;
-		padding: 0;
 	}
 	
-	.icon ul li {
-		padding-right: 20px;
+	#icon, #map {
+		padding-left: 0;
 	}
 	
 	#contact h2 {
 		margin: 0;
 		padding-top: 50px;
+	}
+	
+	h1, #contact {
+		padding: 0;
+	}
+	
+	.icon {
+		padding-right: 50px;
 	}
 	/*----------------------PADDING------------------*/
 	
@@ -658,13 +592,19 @@ section:nth-child(3) .col-8-10:last-child p {
 	/*----------------------TYPOGRAPHY------------------*/
 	
 	h1 {
-		padding: 0;
 		font-size: 1.5rem;
 	}
 	
+	nav li {
+		margin: 0 auto;
+		font-size: .75rem;
+		padding-right: 20px;
+	}
+	
 	nav {
-		font-size: .3rem;
-		text-align: left;
+		width: 100%;
+		font-size: 1rem;
+		text-align: center;
 	}
 	/*----------------------TYPOGRAPHY------------------*/
 	
