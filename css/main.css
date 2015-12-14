@@ -82,7 +82,7 @@ img {
 	padding-top: 50px;
 }
 
-#products, #about, #contact, #location, #footer, .btn-one a, input[type="submit"] {
+#products, #about, #contact, #location, footer, .btn-one a, input[type="submit"] {
 	background-color: #292929;
 }
 
