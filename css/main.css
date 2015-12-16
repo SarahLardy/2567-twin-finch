@@ -76,11 +76,6 @@ img {
   background-size: cover;
 }
 
-
-#about, #location, #contact, #products, #products .col-1-2 {
-	padding-top: 50px;
-}
-
 #products, #about, #contact, #location, footer, .btn-one a, input[type="submit"] {
 	background-color: #292929;
 }
@@ -143,6 +138,25 @@ input[type="submit"], .btn-one a {
 }
 
 
+#about, #location, #contact, #products, #products .col-1-2 {
+	padding-top: 50px;
+}
+
+nav, .icon {
+	padding-top: 40px;
+}
+
+#article {
+	padding-bottom: 50px;
+}
+
+#products .row:nth-child(3) .col-1-2:nth-child(2) .btn-one:last-child, #article, #customer h2 {
+	padding-top: 30px;
+}
+
+#products .row:nth-child(4) .col-1-2:nth-child(2) .btn-one {
+	padding-top: 35px;
+}
 
 /*--------------------------------------------------------------------------------------2 NAVIGATION*/
 
@@ -151,10 +165,6 @@ input[type="submit"], .btn-one a {
 ul li {
 	display: inline-block;
 	margin-right: 3rem;
-}
-
-nav, .icon {
-	padding-top: 40px;
 }
 
 a {
@@ -184,9 +194,6 @@ input[type="text"], input[type~="email"] {
 	margin-bottom: .25rem;
 }
 
-#article {
-	padding-bottom: 50px;
-}
 
 textarea {
 	width: 100%;
@@ -208,8 +215,6 @@ label {
 h1, h2, h3, p, #article {
 	text-align: center;
 }
-
-
 
 /*---------------------------------------------------------------------------------------4 TYPOGRAPHY*/
 
@@ -281,20 +286,9 @@ section:nth-child(3) .col-8-10:last-child p, blockquote {
 	font-style: italic;
 }
 
-#products .row:nth-child(3) .col-1-2:nth-child(2) .btn-one:last-child, #article, #customer h2 {
-	padding-top: 30px;
-}
-
-#products .row:nth-child(4) .col-1-2:nth-child(2) .btn-one {
-	padding-top: 35px;
-}
-
 #article {
 	text-decoration: underline;
 }
-
-
-
 
 /*----------------------------------------------------------------------------------------5 UTILITY*/
 
